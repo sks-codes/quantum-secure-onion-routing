@@ -25,3 +25,14 @@ CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o: ../kyber/ref/api.h
 CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o: ../kyber/ref/rng.h
 CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o: ../src/pkg/client.cxx
 
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include-shared/colors.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include-shared/messages.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include-shared/util.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include/drivers/cli_driver.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include/drivers/crypto_driver.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include/drivers/network_driver.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../include/pkg/onion_client.hpp
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../kyber/ref/api.h
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../kyber/ref/rng.h
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../src/pkg/onion_client.cxx
+

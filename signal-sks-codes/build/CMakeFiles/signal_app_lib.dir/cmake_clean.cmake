@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o"
   "CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o"
   "CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o"
+  "CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o"
   "libsignal_app_lib.a"
   "libsignal_app_lib.pdb"
 )

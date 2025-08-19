@@ -1,4 +1,7 @@
 #include "../include-shared/util.hpp"
+#include "../include-shared/json/single_include/nlohmann/json.hpp"
+using json = nlohmann::json;
+
 
 /**
  * Convert char vec to string.
@@ -78,4 +81,44 @@ std::string concat_msg_fields(CryptoPP::SecByteBlock iv,
   CryptoPP::SecByteBlock concated = iv + public_value;
   return std::string((const char *)concated.data(), concated.size()) +
          ciphertext;
+}
+
+std::vector<CryptoPP::SecByteBlock> parse_keys(){
+  std::ifstream file("../keys/keys.JSON");
+  std::vector<CryptoPP::SecByteBlock> keys;
+  if (file.is_open()) {
+        json jsonObject;
+        file >> jsonObject;
+        int num_keys = jsonObject["num_keys"];
+        file.close();
+        for (int i = 0; i < num_keys; i++){
+          std::string key = jsonObject[std::to_string(i)];
+          keys.push_back(string_to_byteblock(key));
+        }
+    } else {
+        std::cerr << "Unable to open file!" << std::endl;
+    }
+  return keys;
+}
+
+void addKey(CryptoPP::SecByteBlock newKey){
+  std::ifstream file("../keys/keys.JSON");
+    if (file.is_open()) {
+        json jsonObject;
+        file >> jsonObject;
+        file.close();
+        // int num_keys = std::stoi(jsonObject["num_keys"].get<std::string>());
+        int num_keys = jsonObject["num_keys"];
+        jsonObject[std::to_string(num_keys)] = newKey;
+        jsonObject["num_keys"] = num_keys + 1;
+        std::ofstream outFile("../keys/keys.JSON");
+        if (outFile.is_open()) {
+            outFile << std::setw(4) << jsonObject << std::endl;
+            outFile.close();
+        } else {
+            std::cerr << "Unable to open file for writing!" << std::endl;
+        }
+    } else {
+        std::cerr << "Unable to open file for reading!" << std::endl;
+    }
 }

@@ -243,16 +243,3 @@ bool CryptoDriver::HMAC_verify(SecByteBlock key, std::string ciphertext,
     return false;
   }
 }
-
-/**
- * @brief Generates a SHA-256 hash of msg.
- */
-CryptoPP::SecByteBlock CryptoDriver::hash(CryptoPP::SecByteBlock msg) {
-  SHA256 hash;
-  std::string encodedHex;
-  HexEncoder encoder(new StringSink(encodedHex));
-
-  // Compute hash
-  StringSource(byteblock_to_string(msg), true, new HashFilter(hash, new StringSink(encodedHex)));
-  return string_to_byteblock(encodedHex);
-}

@@ -11,7 +11,7 @@ BuildDirectory: /home/cs1515-user/final-key-keepers/signal-sks-codes/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: 86052aa8ab00
+Site: 7e198e1f7bce
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-c++

@@ -6,6 +6,7 @@ CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../include/drivers/cli_driver.hpp
 CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../include/drivers/crypto_driver.hpp
 CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../include/drivers/network_driver.hpp
 CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../include/pkg/client.hpp
+CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../include/pkg/onion_client.hpp
 CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../kyber/ref/api.h
 CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../kyber/ref/rng.h
 CMakeFiles/signal_app.dir/src/cmd/main.cxx.o: ../src/cmd/main.cxx

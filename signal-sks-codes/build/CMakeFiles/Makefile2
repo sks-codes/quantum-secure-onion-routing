@@ -182,7 +182,7 @@ CMakeFiles/signal_app.dir/all: CMakeFiles/signal_app_lib_shared.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/signal_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/signal_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 0
 .PHONY : CMakeFiles/signal_app.dir/rule
@@ -204,12 +204,12 @@ CMakeFiles/signal_app.dir/clean:
 CMakeFiles/signal_app_lib.dir/all: CMakeFiles/signal_app_lib_shared.dir/all
 	$(MAKE) -f CMakeFiles/signal_app_lib.dir/build.make CMakeFiles/signal_app_lib.dir/depend
 	$(MAKE) -f CMakeFiles/signal_app_lib.dir/build.make CMakeFiles/signal_app_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target signal_app_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target signal_app_lib"
 .PHONY : CMakeFiles/signal_app_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/signal_app_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/signal_app_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 0
 .PHONY : CMakeFiles/signal_app_lib.dir/rule
@@ -231,7 +231,7 @@ CMakeFiles/signal_app_lib.dir/clean:
 CMakeFiles/signal_app_lib_shared.dir/all:
 	$(MAKE) -f CMakeFiles/signal_app_lib_shared.dir/build.make CMakeFiles/signal_app_lib_shared.dir/depend
 	$(MAKE) -f CMakeFiles/signal_app_lib_shared.dir/build.make CMakeFiles/signal_app_lib_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target signal_app_lib_shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=12,13,14,15,16 "Built target signal_app_lib_shared"
 .PHONY : CMakeFiles/signal_app_lib_shared.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1069,12 +1069,12 @@ test/CMakeFiles/unit_tests.dir/all: CMakeFiles/signal_app_lib.dir/all
 test/CMakeFiles/unit_tests.dir/all: CMakeFiles/signal_app_lib_shared.dir/all
 	$(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/depend
 	$(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=16,17 "Built target unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=17,18 "Built target unit_tests"
 .PHONY : test/CMakeFiles/unit_tests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/unit_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/unit_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/unit_tests.dir/rule

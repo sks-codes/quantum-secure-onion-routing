@@ -35,6 +35,7 @@ target_link_libraries(${LIBRARY_NAME_SHARED} PRIVATE ${PROJECT_SOURCE_DIR}/kyber
 # add student libraries
 set(SOURCES
   src/pkg/client.cxx
+  src/pkg/onion_client.cxx
   src/drivers/crypto_driver.cxx
   src/drivers/network_driver.cxx
   src/drivers/cli_driver.cxx)

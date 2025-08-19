@@ -1,0 +1,50 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.x
+
+# Build directory
+signal-sks-codes/cmake-build-debug/
+signal-sks-codes/build/*
+signal-sks-codes/debug-build/*
+!signal-sks-codes/build/test.sh
+
+# TA Code
+signal-sks-codes/src-ta/
+signal-sks-codes/include-ta/
+
+# Snipped
+snipped/
+
+# etc.
+.idea
+.vscode

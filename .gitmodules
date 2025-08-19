@@ -1,0 +1,6 @@
+[submodule "signal-sks-codes/kyber"]
+	path = signal-sks-codes/kyber
+	url = https://github.com/pq-crystals/kyber.git
+[submodule "signal-sks-codes/include-shared/json"]
+	path = signal-sks-codes/include-shared/json
+	url = https://github.com/nlohmann/json.git

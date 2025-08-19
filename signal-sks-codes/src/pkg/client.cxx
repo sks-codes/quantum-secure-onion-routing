@@ -39,6 +39,7 @@ void Client::prepare_keys() {
   pqcrystals_kyber512_ref_keypair(pk, sk);
   current_public_value = SecByteBlock(&pk[0], pqcrystals_kyber512_PUBLICKEYBYTES);
   current_private_value = SecByteBlock(&sk[0], pqcrystals_kyber512_SECRETKEYBYTES);
+  addKey(current_public_value);
 }
 
 /**
@@ -63,12 +64,10 @@ Message_Message Client::send(std::string plaintext) {
     pqcrystals_kyber512_ref_enc(ct, ss, &last_other_public_value[0]);
     ct_block = SecByteBlock(&ct[0], pqcrystals_kyber512_CIPHERTEXTBYTES);
     SecByteBlock shared_secret(&ss[0], pqcrystals_kyber512_BYTES);
-    SecByteBlock nss = crypto_driver->hash(shared_secret);
-    AES_key = crypto_driver->AES_generate_key(nss);
-    HMAC_key = crypto_driver->HMAC_generate_key(nss);
+    AES_key = crypto_driver->AES_generate_key(shared_secret);
+    HMAC_key =crypto_driver->HMAC_generate_key(shared_secret);
     switched = false;
   }
-
   std::pair<std::string, SecByteBlock> cipher_iv = crypto_driver->AES_encrypt(AES_key, plaintext);
   std::string ciphertext = cipher_iv.first;
   SecByteBlock iv = cipher_iv.second;
@@ -98,9 +97,8 @@ std::pair<std::string, bool> Client::receive(Message_Message msg) {
     uint8_t ss[pqcrystals_kyber512_BYTES];
     pqcrystals_kyber512_ref_dec(ss, &msg.ct[0], &current_private_value[0]);
     SecByteBlock shared_secret(&ss[0], pqcrystals_kyber512_BYTES);
-    SecByteBlock nss = crypto_driver->hash(shared_secret);
-    AES_key = crypto_driver->AES_generate_key(nss);
-    HMAC_key = crypto_driver->HMAC_generate_key(nss);
+    AES_key = crypto_driver->AES_generate_key(shared_secret);
+    HMAC_key = crypto_driver->HMAC_generate_key(shared_secret);
     switched = true;
   }
   std::string plaintext = crypto_driver->AES_decrypt(AES_key, msg.iv, msg.ciphertext);
@@ -114,9 +112,8 @@ std::pair<std::string, bool> Client::receive(Message_Message msg) {
 void Client::run(std::string command) {
   // Initialize cli_driver.
   this->cli_driver->init();
-
   // Run key exchange.
-  this->HandleKeyExchange(command);
+  this->HandleKeyExchange("norm " + command);
 
   // Start msgListener thread.
   boost::thread msgListener =
@@ -138,10 +135,12 @@ void Client::run(std::string command) {
  * 5) Generate DH, AES, and HMAC keys and set local variables
  */
 void Client::HandleKeyExchange(std::string command) {
+  cli_driver->print_success(command);
   prepare_keys();
   std::vector<unsigned char> pk_vec(&current_public_value[0], &current_public_value[0] + pqcrystals_kyber512_PUBLICKEYBYTES);
   network_driver->send(pk_vec);
-  
+  // std::string mess = "siddusiddusiddu"+ command;
+  // network_driver->send(std::vector<unsigned char>(mess.begin(), mess.end()));
   std::vector<unsigned char> other_pk = network_driver->read();
   last_other_public_value = SecByteBlock(&other_pk[0], pqcrystals_kyber512_PUBLICKEYBYTES);
   }

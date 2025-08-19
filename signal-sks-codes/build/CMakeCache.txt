@@ -21,18 +21,18 @@ BUILD_TESTING:BOOL=ON
 BZRCOMMAND:FILEPATH=BZRCOMMAND-NOTFOUND
 
 //The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0
+Boost_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0
 
-Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
 
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/include
 
-Boost_LOG_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_log.so.1.71.0
+Boost_LOG_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_log.so.1.71.0
 
-Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
 
-Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -306,16 +306,16 @@ CTEST_SUBMIT_RETRY_COUNT:STRING=3
 CTEST_SUBMIT_RETRY_DELAY:STRING=5
 
 //Path to a library.
-CURSES_CURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurses.so
+CURSES_CURSES_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libcurses.so
 
 //Path to a library.
-CURSES_FORM_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libform.so
+CURSES_FORM_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libform.so
 
 //Path to a file.
 CURSES_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
+CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libncurses.so
 
 //Path to a program.
 CVSCOMMAND:FILEPATH=CVSCOMMAND-NOTFOUND
@@ -386,7 +386,7 @@ P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
 PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
 
 //Name of the computer/site where compile is being run
-SITE:STRING=86052aa8ab00
+SITE:STRING=7e198e1f7bce
 
 //Path to the SLURM sbatch executable
 SLURM_SBATCH_COMMAND:FILEPATH=SLURM_SBATCH_COMMAND-NOTFOUND
@@ -404,31 +404,31 @@ SignalApp_BINARY_DIR:STATIC=/home/cs1515-user/final-key-keepers/signal-sks-codes
 SignalApp_SOURCE_DIR:STATIC=/home/cs1515-user/final-key-keepers/signal-sks-codes
 
 //The directory containing a CMake configuration file for boost_atomic.
-boost_atomic_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0
+boost_atomic_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_atomic-1.71.0
 
 //The directory containing a CMake configuration file for boost_chrono.
-boost_chrono_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0
+boost_chrono_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_chrono-1.71.0
 
 //The directory containing a CMake configuration file for boost_date_time.
-boost_date_time_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0
+boost_date_time_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_date_time-1.71.0
 
 //The directory containing a CMake configuration file for boost_filesystem.
-boost_filesystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0
+boost_filesystem_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_filesystem-1.71.0
 
 //The directory containing a CMake configuration file for boost_headers.
-boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0
+boost_headers_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_headers-1.71.0
 
 //The directory containing a CMake configuration file for boost_log.
-boost_log_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_log-1.71.0
+boost_log_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_log-1.71.0
 
 //The directory containing a CMake configuration file for boost_regex.
-boost_regex_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0
+boost_regex_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_regex-1.71.0
 
 //The directory containing a CMake configuration file for boost_system.
-boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0
+boost_system_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_system-1.71.0
 
 //The directory containing a CMake configuration file for boost_thread.
-boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0
+boost_thread_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_thread-1.71.0
 
 //Value Computed by CMake
 doctest_BINARY_DIR:STATIC=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/_deps/doctest-build
@@ -440,7 +440,7 @@ doctest_SOURCE_DIR:STATIC=/home/cs1515-user/final-key-keepers/signal-sks-codes/b
 signal_app_lib_LIB_DEPENDS:STATIC=general;signal_app_lib_shared;
 
 //Dependencies for the target
-signal_app_lib_shared_LIB_DEPENDS:STATIC=general;cryptopp;general;cryptopp;general;Boost::thread;general;Boost::system;general;Boost::filesystem;general;Boost::log;general;/usr/lib/x86_64-linux-gnu/libcurses.so;general;/usr/lib/x86_64-linux-gnu/libform.so;general;/home/cs1515-user/final-key-keepers/signal-sks-codes/kyber/ref/libpqcrystals_kyber512_ref.so;general;/home/cs1515-user/final-key-keepers/signal-sks-codes/kyber/ref/libpqcrystals_aes256ctr_ref.so;general;/home/cs1515-user/final-key-keepers/signal-sks-codes/kyber/ref/libpqcrystals_fips202_ref.so;
+signal_app_lib_shared_LIB_DEPENDS:STATIC=general;cryptopp;general;cryptopp;general;Boost::thread;general;Boost::system;general;Boost::filesystem;general;Boost::log;general;/usr/lib/aarch64-linux-gnu/libcurses.so;general;/usr/lib/aarch64-linux-gnu/libform.so;general;/home/cs1515-user/final-key-keepers/signal-sks-codes/kyber/ref/libpqcrystals_kyber512_ref.so;general;/home/cs1515-user/final-key-keepers/signal-sks-codes/kyber/ref/libpqcrystals_aes256ctr_ref.so;general;/home/cs1515-user/final-key-keepers/signal-sks-codes/kyber/ref/libpqcrystals_fips202_ref.so;
 
 
 ########################
@@ -663,9 +663,9 @@ DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: thread system filesystem log ][v1.71.0(1.71)]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: thread system filesystem log ][v1.71.0(1.71)]
 //Details about finding Curses
-FIND_PACKAGE_MESSAGE_DETAILS_Curses:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurses.so][/usr/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_Curses:INTERNAL=[/usr/lib/aarch64-linux-gnu/libcurses.so][/usr/include][v()]
 //Details about finding Doxygen
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen missing components: dot][v1.8.17()]
 //ADVANCED property for variable: GITCOMMAND

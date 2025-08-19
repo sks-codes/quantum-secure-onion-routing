@@ -865,6 +865,33 @@ src/pkg/client.cxx.s:
 	$(MAKE) -f CMakeFiles/signal_app_lib.dir/build.make CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.s
 .PHONY : src/pkg/client.cxx.s
 
+src/pkg/onion_client.o: src/pkg/onion_client.cxx.o
+
+.PHONY : src/pkg/onion_client.o
+
+# target to build an object file
+src/pkg/onion_client.cxx.o:
+	$(MAKE) -f CMakeFiles/signal_app_lib.dir/build.make CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o
+.PHONY : src/pkg/onion_client.cxx.o
+
+src/pkg/onion_client.i: src/pkg/onion_client.cxx.i
+
+.PHONY : src/pkg/onion_client.i
+
+# target to preprocess a source file
+src/pkg/onion_client.cxx.i:
+	$(MAKE) -f CMakeFiles/signal_app_lib.dir/build.make CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.i
+.PHONY : src/pkg/onion_client.cxx.i
+
+src/pkg/onion_client.s: src/pkg/onion_client.cxx.s
+
+.PHONY : src/pkg/onion_client.s
+
+# target to generate assembly for a file
+src/pkg/onion_client.cxx.s:
+	$(MAKE) -f CMakeFiles/signal_app_lib.dir/build.make CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.s
+.PHONY : src/pkg/onion_client.cxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -940,6 +967,9 @@ help:
 	@echo "... src/pkg/client.o"
 	@echo "... src/pkg/client.i"
 	@echo "... src/pkg/client.s"
+	@echo "... src/pkg/onion_client.o"
+	@echo "... src/pkg/onion_client.i"
+	@echo "... src/pkg/onion_client.s"
 .PHONY : help
 
 

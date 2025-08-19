@@ -11,6 +11,7 @@ CMakeFiles/signal_app_lib_shared.dir/src-shared/messages.cxx.o: ../include-share
 CMakeFiles/signal_app_lib_shared.dir/src-shared/messages.cxx.o: ../include-shared/util.hpp
 CMakeFiles/signal_app_lib_shared.dir/src-shared/messages.cxx.o: ../src-shared/messages.cxx
 
+CMakeFiles/signal_app_lib_shared.dir/src-shared/util.cxx.o: ../include-shared/json/single_include/nlohmann/json.hpp
 CMakeFiles/signal_app_lib_shared.dir/src-shared/util.cxx.o: ../include-shared/util.hpp
 CMakeFiles/signal_app_lib_shared.dir/src-shared/util.cxx.o: ../src-shared/util.cxx
 

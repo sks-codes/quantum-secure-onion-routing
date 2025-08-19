@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <vector>
+#include <fstream>
 
 #include <crypto++/cryptlib.h>
 #include <crypto++/filters.h>
@@ -30,3 +31,7 @@ void print_key_as_hex(const CryptoPP::SecByteBlock &block);
 std::string concat_msg_fields(CryptoPP::SecByteBlock iv,
                               CryptoPP::SecByteBlock public_value,
                               std::string ciphertext);
+
+std::vector<CryptoPP::SecByteBlock> parse_keys(int num_keys);
+
+void addKey(CryptoPP::SecByteBlock newKey);

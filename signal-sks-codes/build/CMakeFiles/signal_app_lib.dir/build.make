@@ -70,9 +70,22 @@ CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs1515-user/final-key-keepers/signal-sks-codes/src/pkg/client.cxx -o CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.s
 
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: CMakeFiles/signal_app_lib.dir/flags.make
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o: ../src/pkg/onion_client.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o -c /home/cs1515-user/final-key-keepers/signal-sks-codes/src/pkg/onion_client.cxx
+
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cs1515-user/final-key-keepers/signal-sks-codes/src/pkg/onion_client.cxx > CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.i
+
+CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs1515-user/final-key-keepers/signal-sks-codes/src/pkg/onion_client.cxx -o CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.s
+
 CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o: CMakeFiles/signal_app_lib.dir/flags.make
 CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o: ../src/drivers/crypto_driver.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o -c /home/cs1515-user/final-key-keepers/signal-sks-codes/src/drivers/crypto_driver.cxx
 
 CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.s: cmake_force
 
 CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o: CMakeFiles/signal_app_lib.dir/flags.make
 CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o: ../src/drivers/network_driver.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o -c /home/cs1515-user/final-key-keepers/signal-sks-codes/src/drivers/network_driver.cxx
 
 CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.s: cmake_force
 
 CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o: CMakeFiles/signal_app_lib.dir/flags.make
 CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o: ../src/drivers/cli_driver.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o -c /home/cs1515-user/final-key-keepers/signal-sks-codes/src/drivers/cli_driver.cxx
 
 CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.i: cmake_force
@@ -112,6 +125,7 @@ CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.s: cmake_force
 # Object files for target signal_app_lib
 signal_app_lib_OBJECTS = \
 "CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o" \
+"CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o" \
 "CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o" \
 "CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o" \
 "CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o"
@@ -120,12 +134,13 @@ signal_app_lib_OBJECTS = \
 signal_app_lib_EXTERNAL_OBJECTS =
 
 libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o
+libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/src/pkg/onion_client.cxx.o
 libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o
 libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o
 libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o
 libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/build.make
 libsignal_app_lib.a: CMakeFiles/signal_app_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsignal_app_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cs1515-user/final-key-keepers/signal-sks-codes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libsignal_app_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/signal_app_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/signal_app_lib.dir/link.txt --verbose=$(VERBOSE)
 
