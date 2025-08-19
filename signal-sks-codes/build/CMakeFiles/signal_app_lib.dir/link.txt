@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsignal_app_lib.a  CMakeFiles/signal_app_lib.dir/src/pkg/client.cxx.o CMakeFiles/signal_app_lib.dir/src/drivers/crypto_driver.cxx.o CMakeFiles/signal_app_lib.dir/src/drivers/network_driver.cxx.o CMakeFiles/signal_app_lib.dir/src/drivers/cli_driver.cxx.o
+/usr/bin/ranlib libsignal_app_lib.a
