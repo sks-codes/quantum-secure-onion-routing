@@ -1,6 +1,6 @@
-# Final Project
+# Quantum-Secure Onion Routing
 
-This is our implementation of QUACK, a quantum-safe secure communication system. To run our code, clear the build directory, and then use cmake and make build targets. Finally, use the command ./signal_app <listen | connect> <address> <port> to listen or connect to a secure channel.
+This is an implementation of QUACK, a quantum-safe secure communication system. To run our code, clear the build directory, and then use cmake and make build targets. Finally, use the command ./signal_app <listen | connect> <address> <port> to listen or connect to a secure channel.
 
 We also have a prototype chained communication system that will eventually include layered onion encryptions. To access this, see the onion_mode branch of this repository. while using onion mode, you need to run the following commands:
 
